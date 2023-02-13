@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap");
+
+body {
+  background-color: lightgray;
+  font-family: "roboto flex";
+}
+
+.header_container {
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px;
+  padding: 10px 50px;
+  margin: 50px;
+  max-width: 600px;
+  margin: auto;
+}
+
+#head_h1 {
+  text-transform: uppercase;
+  color: black;
+  font-size: 3rem;
+  letter-spacing: 20px;
+  text-shadow: 10px 10px 15px darkred;
+}
+
+.header_container input {
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+#search_btn {
+  background-color: darkcyan;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-right: -50px;
+}
+
+#example_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+#example_list a {
+  text-decoration: none;
+  color: darkred;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.card_container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px black;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.card_head {
+  margin: auto;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: darkred;
+  text-align: center;
+}
+
+.card_img {
+  border-radius: 20px;
+  max-height: 20rem;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.card_description {
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+}

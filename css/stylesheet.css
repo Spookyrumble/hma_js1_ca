@@ -117,6 +117,9 @@ footer {
 
 #goback {
   color: darkred;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /* CONTACT PAGE */

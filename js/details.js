@@ -41,7 +41,9 @@ async function fetchBeer() {
                                         <h4 class="details_h2">Brewers tips:</h4>
                                         <p class="details_p">${details.brewers_tips}</p>
                                     </div>
+                                    <a href="contact.html" id="goback">Contact us</a>
                                     <a href="index.html" id="goback">Go Back..</a>
+                                    
                                   `;
     }
   } catch (error) {

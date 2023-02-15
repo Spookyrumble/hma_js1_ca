@@ -5,90 +5,70 @@ Course Aassignment JavaScript1
 API: Beer recipes from PunkAPI
 **https://api.punkapi.com/v2/beers**
 
-# Course Assignment
+# Course Assignment JavaSccript 1 by Hans Marius Andreassen.
 
-Brief
-**Level 1 is required.**
+I initially had a random coctail generator idea I wanted to make, but the endpoint only had 100 connections before hitting the pay wall, so I started over with this API which I', happy with and gives 3600 connections per hour which should be quite enough.
 
-Level 2 is optional.
-
-Choosing appropriate variable and function names will form part of your assessment, as will proper and consistent formatting of your code.
-
-# Level 1 Process
-
-Find an API
-Search for a public, free-to-use API.
-
-You will need to make two calls to this API:
-
-to fetch an array of results
-to fetch a single result using an id, name, or other property.
-You will need to read the API’s documentation to see what URLs are available, if they require a key to be sent in the header, and any other configuration they might need.
-
-There are many free APIs discoverable by a Google search.
-
-You may not use the APIs used in the lessons.
-
-# Styling
-
-The focus of the CA is on JavaScript, not styling. Yet, as a front-end developer you will always need to produce user-interfaces that make sense and are easy to follow. You will need to provide navigation to and from the home page (index.html) and the contact page.
-
-Both API calls should include a loading indicator.
+I drew a little design idea on a piece of paper and jumped to the HTML and CSS build. I skipped doing a prototype because I did not have any idea about the end result because of having no experience with JS before starting this semester.
+From having no experience to some idea of how it works I am actually very happy with my result.
+It is simple but it works which I hope is the whole idea :)
 
 # index.html
 
-Make a call to your API URL. Loop through the results and create HTML for each result.
+I set up index page like I usually do with some examples for me to style in CSS so I could see what I was doing and create the styling I would eventually need when I got the JS to work.
 
-You must display at least 3 different properties inside the HTML. It’s not required to display an image.
-
-You will need to link each result to a details.html page and to pass a parameter in the query string to that page.
-
-If you are going to fetch the individual result on the details page by its id, then pass an id in the query string.
-
-If you will be retrieving by another property, like name for example, pass the name in the query string.
-
-You will fetch this parameter from the query string in the details page code.
-
-Catch any errors and display a message on the page if an error occurs.
+Here you will find a really simple header with the name and a link to the contact.html page.
+Beer cards, names, pictures and taglines are all generated with JS in the index.js file.
+Clicking the card (the whole card is the link) brings us to the ==>
 
 # details.html
 
-(Remember, you will need a parameter in the query string on this page, so either click through to it from the index page or manually add a parameter to the URL).
-
-Retrieve the id, name or other parameter from the query string.
-
-Once you have the parameter, add it to the API URL in the format the API requires.
-
-Make an API call using the URL you create.
-
-Display at least 3 different properties from the received JSON on this page.
-
-Set the title of the HTML page to be one of the property values, like name, title or another relevant property.
-
-Catch any errors and display a message on the page if an error occurs.
+Here you will first see the CSS loader (not created by me. See refrences for source) for a second before JS loads and loads the querystring ID to the page so it generates the selected beer and its info.
+We have the name of the beer (loaded in to the document.title as well), the date of when it was made first. The description of this beer as well as good food matches and brewers tips.
+I decided agains having more info on here, but I might add that later for fun and more practice. At the bottom of the card there are programmatically added links to go back and one to take you to the ==>
 
 # contact.html
 
-Create a form with the following inputs and validation rules.
+Hey it's the loader again! This is a simple form page where I brought back the index.html header and its "go back" link to go back to the index page.
 
-Name - required
-Subject - must have a value with a minimum length of 10
-Email - must have a value and be formatted like an email address
-Address - must have a value with a minimum length of 25
-When the form on this page is submitted, write code to validate the input. If any of the inputs fail validation display an error message for the relevant input.
+The form itself is basic and made to accommodate the CA brief and its criterias.
+I initially had required parameters in the html for the name and email but I wanted my own error message so I removed those and programmed in what I had in mind. After som mock up in html to create the classes and IDs. This way I could make my idea com to life with having the requirements for each written under the inputs and let JS handle them. I wanted them to go away as you are writing when the criteria is fulfilled. More about this in the form.js section.
 
-# Level 2 Process
+# JavaScript
 
-**contact.html**
-If all validation passes, add a message above the form indicating the form passed validation.
+**index.js**
+I will write this very straight forward, leaving out all the backs and forth I had to go through to make it work.
+Theres a simple fetch function to obtain the array from punkabi.com. No key required for this one. The privious I made had a key requirement so i got to play with that too (I got it to work I would like to add) but for this one it was open.
+Fetch and create. Made a for loop to loop the array pulling out the before mentioned information and create the cards with the information you see on index.html
 
-# Information
+**details.js**
+This does the same basically as index.js but you will also find the querystring id being added here with the URLSearchParams.
+After it's pretty self explanitory I guess. It does the same as index.js. The content is all created with JS. At the bottom is the setTimeoutfunction to delay the call on the fetchBeer function.
+Here I also added the "go back" and "contact" links but to mix it up I added these programmatically with JS instead of hard coding them in to the HTML.
 
-Rules
-Sharing APIs and copying of any code will result in your assignment being given a mark of ‘not passed’. Please do not plagiarise.
-You may only use plain JavaScript for this assignment, no libraries or frameworks. You will be given a mark of ‘not passed’ if you use a library or framework for your JavaScript code.
-Submission
-Create a folder called your-name-js1-ca, e.g. mary-smith-js1-ca
-Add all your code to this folder, zip the folder and submit the zip file
-Time
-40 hours
+**form.js**
+This was kind of where the fun started for me and where I have spent the most time.
+My validateForm Function became quite big but I am quite pleased with how I solved my idea about the criterias. By adding listeners to the inputs and values and wrote if/else statements to show and hide the criteria text on the form itself. This however presented a new problem with preventing form default behavior as I had to call the validateForm before submitting it. It caused an error but it also stopped the criteria "reading" while typing, so I had to figure out a way to solve this which I couldnt find in our modules. I tried looking in MDN but could not seem to find it there either. I solved this by creating a function for the preventDefault() and adding a eventlistener to the form container listening for the submit to happen. To be honest. I am not all sure why it works but it does.
+
+for the checkLength function I decided the trim() method as it makes no sense to names and addresses trimmed in this context. I did how ever make it just to try it but removed it later.
+
+After this I wanted to try the lvl 2 of the brief (not going to lie here. It was my intention all the way) and make the error/success messages showing up by checking if all criterias were met and displaying the messages accordingly.
+It is a basic if/else statment in short. If all of validateForm come back "true" via the checkLength function the createSuccessHtml function is called. If "else" the createErrorHtml function is called.
+I also added a shadow highlight to the submit button if error or success.
+In the checkFormBoolean function you will also see a clearIputs funcion. This will clear the inputs if the form is "true" and is submitted. If "false" everything will stay written in the inputs for correction purposes and not to mention practical reasons.
+
+**functions.js**
+To clean things up I played with writing reusable functions and export/import and moved quite a bit of functions over from form.js to functions.js and have them imported instead.
+
+# Conclusion
+
+This was fun. I learned far more from working with the CA than I did trying to work through the modules. Face a problem and work it through.
+All code and functions are my own apart from the obvious ones.
+
+# refrences and sources
+
+https://cssloaders.github.io/
+https://digitalfortress.tech/tips/top-15-commonly-used-regex/
+https://api.punkapi.com/v2/beers
+https://developer.mozilla.org/en-US/
+https://stackoverflow.com/

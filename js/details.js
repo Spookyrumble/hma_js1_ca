@@ -1,5 +1,4 @@
 const detailContainer = document.querySelector(".detail_container");
-const metaTitle = document.title;
 
 const queryString = document.location.search;
 

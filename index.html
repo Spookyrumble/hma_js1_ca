@@ -6,28 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Find a movie to watch here!" />
     <link rel="stylesheet" href="css/stylesheet.css" />
-    <script defer src="js/script.js" type="module"></script>
-    <title>Cocktails | Home</title>
+    <link rel="stylesheet" href="css/loader.css" />
+    <script defer src="js/index.js" type="module"></script>
+    <title>Beer Recipes</title>
   </head>
   <body>
     <header class="header_container">
       <h1 id="head_h1">Beer Recipes</h1>
-      <!-- <h2>Search by name</h2> -->
-      <input
-        id="search_input"
-        type="text"
-        name="search"
-        placeholder="Search by name"
-      />
-      <button id="search_btn">Search</button>
-      <!-- <label for="search">Search</label> -->
-      <ul id="example_list">
-        <a href="#">Fake Lager</a>
-        <a href="#">Arcade Nation</a>
-        <a href="#">Vice Bier</a>
-        <a href="#">Storm</a>
-      </ul>
+      <a href="contact.html" id="goback">Contact us</a>
     </header>
-    <section id="container"></section>
+    <section id="container">
+      <p id="loader">Loading..<span class="loader"></span></p>
+    </section>
+    <footer>&copy;HMA Feb 2023</footer>
   </body>
 </html>

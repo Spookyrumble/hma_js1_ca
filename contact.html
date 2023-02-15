@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Find a movie to watch here!" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <script defer src="js/form/functions.js" type="module"></script>
+    <script defer src="js/form/form.js" type="module"></script>
+    <title>BEERS | Contact</title>
+  </head>
+  <body>
+    <header class="header_container">
+      <h1 id="head_h1">Beer Recipes</h1>
+      <h2>Feel free to contact us</h2>
+      <a href="index.html" id="goback">Go Back..</a>
+    </header>
+    <div id="results"></div>
+    <!-- class="form_error" for js -->
+    <form id="form_container">
+      <label class="form_label" for="firstname">first name:</label>
+      <input class="form_input" type="text" name="firstname" id="firstname" />
+      <div class="form_error" id="name_error">(required)</div>
+      <label class="form_label" for="surname">last Name:</label>
+      <input class="form_input" type="text" name="surname" id="surname" />
+      <div class="form_error" id="surname_error">(required)</div>
+      <label class="form_label" for="address">address:</label>
+      <input class="form_input" type="text" name="address" id="address" />
+      <div class="form_error" id="address_error">(minimum length of 20)</div>
+      <label class="form_label" for="subject">subject:</label>
+      <input class="form_input" type="text" name="subject" id="subject" />
+      <div class="form_error" id="subject_error">(minimum length of 10)</div>
+      <label class="form_label" for="email">email:</label>
+      <input class="form_input" type="email" name="email" id="email" />
+      <div class="form_error" id="email_error">(please check format)</div>
+      <label class="form_label" for="message">message</label>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <button id="form_btn" type="submit">send</button>
+    </form>
+    <footer>&copy;HMA Feb 2023</footer>
+  </body>
+</html>

@@ -2,8 +2,8 @@
 
 Course Aassignment JavaScript1
 
-API: The cocktail db
-"https://the-cocktail-db.p.rapidapi.com/search.php?s=vodka"
+API: Beer recipes from PunkAPI
+**https://api.punkapi.com/v2/beers**
 
 # Course Assignment
 

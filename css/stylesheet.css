@@ -11,10 +11,8 @@ body {
   text-align: center;
   background-color: white;
   border: 1px solid black;
-  border-radius: 20px;
   box-shadow: 1px 1px 15px;
   padding: 10px 50px;
-  max-width: 600px;
   margin: auto;
 }
 
@@ -39,6 +37,7 @@ body {
   font-size: large;
   border-radius: 10px;
   border: 1px solid black;
+  border-radius: 5px;
   box-shadow: 1px 1px 15px black;
   padding: 5px;
 }
@@ -60,7 +59,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   border: 1px solid black;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 1px 1px 15px black;
   margin: 10px;
   text-decoration: none;
@@ -131,7 +130,7 @@ footer {
   margin: auto;
   background-color: white;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 1px 1px 15px;
   padding: 20px 20px;
   margin-top: 20px;
@@ -153,7 +152,7 @@ footer {
   margin-top: 20px;
   border-radius: 5px;
   border: 1px solid black;
-  box-shadow: 1px 1px 15px;
+  box-shadow: 1px 1px 5px;
   text-transform: capitalize;
   color: black;
 }
@@ -181,7 +180,7 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   border: 1px solid black;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 1px 1px 15px black;
   margin: auto;
   text-decoration: none;
@@ -193,7 +192,7 @@ footer {
   text-align: center;
   box-sizing: content-box;
   margin: auto;
-  padding: 5px;
+  padding: 25px;
   color: #008000;
 }
 
@@ -201,6 +200,6 @@ footer {
   text-align: center;
   box-sizing: content-box;
   margin: auto;
-  padding: 5px;
-  color: red;
+  padding: 25px;
+  color: #ff0000;
 }

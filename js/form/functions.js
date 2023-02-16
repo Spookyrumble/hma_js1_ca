@@ -48,9 +48,12 @@ export function preventDefault(event) {
 // Clears the form inputs on "success". Form stays filled if "error" for practical reasons.
 export function clearInputs(form) {
   const input = form.querySelectorAll("input");
-
   for (let i = 0; i < input.length; i++) {
     input[i].value = "";
     console.log(input[i]);
   }
+}
+
+export function resetCriteraText(divs) {
+  divs.style.display = null;
 }

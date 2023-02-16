@@ -4,6 +4,7 @@ import { preventDefault } from "./functions.js";
 import { createsuccessHtml } from "./functions.js";
 import { createErrorHtml } from "./functions.js";
 import { clearInputs } from "./functions.js";
+import { resetCriteraText } from "./functions.js";
 
 const contactForm = document.querySelector("#form_container");
 const firstName = document.querySelector("#firstname");
@@ -18,6 +19,7 @@ const lastNameError = document.querySelector("#surname_error");
 const addressError = document.querySelector("#address_error");
 const subjectError = document.querySelector("#subject_error");
 const emailError = document.querySelector("#email_error");
+const inputDivs = document.querySelectorAll(".form_error");
 
 // Prevents page refresh on submit //
 contactForm.addEventListener("submit", preventDefault);

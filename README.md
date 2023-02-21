@@ -55,10 +55,10 @@ for the checkLength function I decided against the trim() method as it makes no 
 After this I wanted to try the lvl 2 of the brief (not going to lie here. It was my intention all the way) and make the error/success messages showing up by checking if all criterias were met and displaying the messages accordingly.
 It is a basic if/else statment in short. If all of validateForm come back "true" via the checkLength function the createSuccessHtml function is called. If "else" the createErrorHtml function is called.
 I also added a shadow highlight to the submit button if error or success.
-In the checkFormBoolean function you will also see a clearIputs funcion. This will clear the inputs if the form is "true" and is submitted. If "false" everything will stay written in the inputs for correction purposes and not to mention practical reasons.
+In the checkFormBoolean function you will also see a clearIputs function. This will clear the inputs if the form is "true" and is submitted. If "false" everything will stay written in the inputs for correction purposes and not to mention practical reasons.
 
 **functions.js**
-To clean things up I played with writing reusable functions and export/import and moved quite a bit of functions over from form.js to functions.js and have them imported instead.
+To clean things up I played with writing reusable functions and export/import and moved quite a bit of functions over from form.js to functions.js to have them imported instead.
 
 # Conclusion
 

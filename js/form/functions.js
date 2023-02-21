@@ -54,6 +54,4 @@ export function clearInputs(form) {
   }
 }
 
-export function resetCriteraText(divs) {
-  divs.style.display = null;
-}
+

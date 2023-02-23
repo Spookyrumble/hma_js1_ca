@@ -21,11 +21,11 @@ async function fetchRecipe() {
                               <img src="${beers.image_url}" class="card_img" alt="Picture of the beer described">
                               <h2 class="card_head">${beers.name}</h2>
                               <p class="card_description">${beers.tagline}</p>
-                              </a>
-                            `;
+                              </a>`;
     }
   } catch (error) {
     console.log(error, "Oh no.. the dev has messed up somewhere");
+    container.innerHTML = `<h2 class="index_error card_container">There was an error fetching the result!</h2>`;
   }
 }
 

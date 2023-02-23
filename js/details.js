@@ -47,6 +47,7 @@ async function fetchBeer() {
     }
   } catch (error) {
     console.log("Oh no.. the dev sucks", error);
+    detailContainer.innerHTML = `<h2 class="index_error">There was a problem loading this beer!</h2>`;
   }
 }
 

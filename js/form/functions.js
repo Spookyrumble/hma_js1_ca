@@ -21,16 +21,18 @@ export function createsuccessHtml() {
           <h3 class="result_success">Success!</h3>
           <p class="result_success">We will get back to you shortly!</p>
         </div>`;
+
   removeMessage(5000);
 }
 
 // // Checks the validateForm Boolean inside checkFormBoolean and creates the "Error" message and runs the timeout function if = false.
-export function createErrorHtml() {
+export function createErrorHtml(errorType) {
   createResultHtml.innerHTML = `<div class="result_container">
       <h3 class="result_error">Error!</h3>
-      <p class="result_error">Please fill out the missing information.<br>Check word length!</p>
+      <p class="result_error">Please fill out the missing information.<br>Check ${errorType}</p>
     </div>`;
-  removeMessage(5000);
+
+  // removeMessage(5000);
 }
 
 // Removes the Success/Error messages after given milliseconds.
@@ -53,5 +55,3 @@ export function clearInputs(form) {
     console.log(input[i]);
   }
 }
-
-

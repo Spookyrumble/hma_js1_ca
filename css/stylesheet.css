@@ -95,12 +95,21 @@ footer {
   color: darkgray;
 }
 
+.index_error {
+  color: darkred;
+  text-align: center;
+  padding: 10px;
+}
+
 /* DETAILS PAGE */
 
 .detail_container {
   background-color: white;
   border-radius: 15px;
   padding: 20px;
+  align-items: center;
+  margin: auto;
+  text-align: center;
 }
 
 #date {

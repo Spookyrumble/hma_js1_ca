@@ -5,7 +5,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
-console.log(id);
+console.log("Beer ID:" + " " + id);
 
 const url = "https://api.punkapi.com/v2/beers/" + id;
 

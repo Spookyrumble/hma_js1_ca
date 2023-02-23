@@ -12,6 +12,7 @@ const address = document.querySelector("#address");
 const subject = document.querySelector("#subject");
 const email = document.querySelector("#email");
 const submitBtn = document.querySelector("#form_btn");
+const results = document.querySelector("#results");
 
 const firstNameError = document.querySelector("#name_error");
 const lastNameError = document.querySelector("#surname_error");
@@ -70,7 +71,7 @@ function validateForm() {
       }
     });
   } catch (error) {
-    results.innerHTML = "There was an error generating the form";
+    results.innerHTML = error;
   }
 }
 

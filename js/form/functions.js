@@ -35,10 +35,11 @@ export function createErrorHtml(errorType) {
   // removeMessage(5000);
 }
 
-// Removes the Success/Error messages after given milliseconds.
+// Removes the Success/Error messages after given milliseconds and reloads URL to reset the form.
 export function removeMessage(ms) {
   setTimeout(function () {
     createResultHtml.innerHTML = "";
+    location.reload();
   }, ms);
 }
 

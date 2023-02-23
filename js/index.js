@@ -25,7 +25,7 @@ async function fetchRecipe() {
     }
   } catch (error) {
     console.log(error, "Oh no.. the dev has messed up somewhere");
-    container.innerHTML = `<h2 class="index_error card_container">There was an error fetching the result!</h2>`;
+    container.innerHTML = `<h2 class="index_error card_container">There was an error fetching the results!</h2>`;
   }
 }
 

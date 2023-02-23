@@ -74,10 +74,10 @@ function validateForm() {
   }
 }
 
-// Runs validateForm input check //
+// Runs validateForm input check on page load. //
 validateForm();
 
-// Checks if all form booleans are true and creates the appropriate message. It will also give a green glow on the send button when clicked if all are "true" //
+// Checks if all form booleans are true and creates the appropriate message. It will also give a green glow on the send button when clicked if all are "true". the else switch will check which returns false and name it in the error message //
 function checkFormBoolean() {
   let check = true;
   if (

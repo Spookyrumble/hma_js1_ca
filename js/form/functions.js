@@ -31,8 +31,6 @@ export function createErrorHtml(errorType) {
       <h3 class="result_error">Error!</h3>
       <p class="result_error">Please fill out the missing information.<br>Check ${errorType}</p>
     </div>`;
-
-  // removeMessage(5000);
 }
 
 // Removes the Success/Error messages after given milliseconds and reloads URL to reset the form.

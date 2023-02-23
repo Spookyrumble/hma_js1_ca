@@ -15,13 +15,9 @@ async function fetchBeer() {
 
     const data = await response.json();
 
-    console.log(data);
-
     detailContainer.innerHTML = "";
 
     for (let i = 0; i < data.length; i++) {
-      console.log(data[i].name);
-
       const details = data[i];
       console.log(details);
 
@@ -37,12 +33,17 @@ async function fetchBeer() {
                                         <p class="details_p">${details.food_pairing}</p>
                                     </div>
                                     <div>
+                                        <h4 class="details_h2">Main ingredients:</h4>
+                                        <p class="details_p">Hops: ${details.ingredients.hops[0].name} and ${details.ingredients.hops[1].name}</p>
+                                        <p class="details_p">Malt: ${details.ingredients.malt[0].name} and ${details.ingredients.malt[1].name}</p>
+                                    </div>
+                                    <div>
                                         <h4 class="details_h2">Brewers tips:</h4>
                                         <p class="details_p">${details.brewers_tips}</p>
                                     </div>
+                                    <h4 class="details_h2">For full recipe and method please contact us</h4>
                                     <a href="contact.html" id="goback">Contact us</a>
                                     <a href="index.html" id="goback">Go Back..</a>
-                                    
                                   `;
     }
   } catch (error) {

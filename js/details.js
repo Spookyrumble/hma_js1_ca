@@ -29,13 +29,13 @@ async function fetchBeer() {
                                         <p class="details_p">${details.description}</p>
                                     </div>
                                     <div>
-                                        <h3 class="details_h2">This beer goes well with:</h3>
-                                        <p class="details_p">${details.food_pairing}</p>
-                                    </div>
-                                    <div>
-                                        <h4 class="details_h2">Main ingredients:</h4>
+                                        <h3 class="details_h2">Main ingredients:</h3>
                                         <p class="details_p">Hops: ${details.ingredients.hops[0].name} and ${details.ingredients.hops[1].name}</p>
                                         <p class="details_p">Malt: ${details.ingredients.malt[0].name} and ${details.ingredients.malt[1].name}</p>
+                                    </div>
+                                    <div>
+                                        <h3 class="details_h2">This beer goes well with:</h3>
+                                        <p class="details_p">${details.food_pairing}</p>
                                     </div>
                                     <div>
                                         <h4 class="details_h2">Brewers tips:</h4>

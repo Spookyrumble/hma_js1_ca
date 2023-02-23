@@ -16,6 +16,10 @@ body {
   margin: auto;
 }
 
+.header_container a {
+  text-decoration: none;
+}
+
 #head_h1 {
   text-transform: uppercase;
   color: black;
@@ -114,7 +118,7 @@ footer {
 }
 
 #date {
-  margin-top: -35px;
+  margin-top: -25px;
   font-weight: bold;
   font-style: italic;
 }
@@ -126,7 +130,6 @@ footer {
 
 #goback {
   color: darkred;
-  border: 1px solid black;
   padding: 5px;
   border-radius: 10px;
 }

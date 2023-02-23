@@ -7,11 +7,11 @@ API: Beer recipes from PunkAPI
 
 # Course Assignment JavaSccript 1 by Hans Marius Andreassen.
 
-I initially had a random coctail generator idea I wanted to make, but the endpoint only had 100 connections before hitting the pay wall, so I started over with this API which I', happy with and gives 3600 connections per hour which should be quite enough.
+I initially had a random coctail generator idea I wanted to make, but the endpoint only had 100 connections before hitting the pay wall, so I started over with this API which I am really happy with and it gives 3600 connections per hour which should be quite enough.
 
-I drew a little design idea on a piece of paper and jumped to the HTML and CSS build. I skipped doing a prototype because I did not have any idea about the end result because of having no experience with JS before starting this semester.
+I drew a little design idea on a piece of paper and jumped to the HTML and CSS build. I skipped doing a prototype because I did not have any idea about the end result because of me not having any experience with JS before starting this semester.
 From having no experience to some idea of how it works I am actually very happy with my result.
-It is simple but it works which I hope is the whole idea :)
+It is simple but it works which I hope is the whole idea for this CA.
 
 # index.html
 
@@ -24,7 +24,7 @@ Clicking the card (the whole card is the link) brings us to the ==>
 # details.html
 
 Here you will first see the CSS loader (not created by me. See refrences for source) for a second before JS loads and loads the querystring ID to the page so it generates the selected beer and its info.
-We have the name of the beer (loaded in to the document.title as well), the date of when it was made first. The description of this beer as well as good food matches and brewers tips.
+We have the name of the beer (loaded in to the document.title as well), the date of when it was made first, the description of this beer, the main hop and malt ingredients as well as good food matches and brewers tips.
 I decided agains having more info on here, but I might add that later for fun and more practice. At the bottom of the card there are programmatically added links to go back and one to take you to the ==>
 
 # contact.html
@@ -48,14 +48,15 @@ Here I also added the "go back" and "contact" links but to mix it up I added the
 
 **form.js**
 This was kind of where the fun started for me and where I have spent the most time.
-My validateForm Function became quite big but I am quite pleased with how I solved my idea about the criterias. By adding listeners to the inputs and values and wrote if/else statements to show and hide the criteria text on the form itself. This however presented a new problem with preventing form default behavior as I had to call the validateForm before submitting it. It caused an error but it also stopped the criteria "reading" while typing, so I had to figure out a way to solve this which I couldnt find in our modules. I tried looking in MDN but could not seem to find it there either. I solved this by creating a function for the preventDefault() and adding a eventlistener to the form container listening for the submit to happen. To be honest. I am not all sure why it works but it does. The removeMessage function holds a document.reload() method to reset the form when the success message disappears.
+My validateForm Function became quite big but I am quite pleased with how I solved my idea about the criterias. By adding listeners to the inputs and values and wrote if/else statements to show and hide the criteria text on the form itself. This however presented a new problem with preventing form default behavior as I had to call the validateForm before submitting it. It caused an error but it also stopped the criteria "reading" while typing that I wanted to accomplish, so I had to figure out a way to solve this which I could not find in our modules. I tried looking in MDN but could not seem to find it there either. I solved this by creating a function for the preventDefault() and adding a eventlistener to the form container listening for the submit to happen. To be honest. I am not all sure why it works but it does. The removeMessage function holds a document.reload() method to reset the form when the success message disappears.
 
-for the checkLength function I decided against the trim() method as it makes no sense to names and addresses trimmed in this context. I did how ever make it just to try it but removed it later.
+for the checkLength function I decided against the trim() method as it makes no sense to have names and addresses trimmed in this context. I did how ever make it just to try it but removed it later.
 
 After this I wanted to try the lvl 2 of the brief (not going to lie here. It was my intention all the way) and make the error/success messages showing up by checking if all criterias were met and displaying the messages accordingly.
 It is a basic if/else statment in short. If all of validateForm come back "true" via the checkLength function the createSuccessHtml function is called. If "else" the createErrorHtml function is called.
 I also added a shadow highlight to the submit button if error or success.
 In the checkFormBoolean function you will also see a clearIputs function. This will clear the inputs if the form is "true" and is submitted. If "false" everything will stay written in the inputs for correction purposes and not to mention practical reasons.
+To display the relevant error I made a switch that will check validity and display the relevant unmet input criteria. This one I struggled quite a bit with but I am pleased with how I solved it in the end.
 
 **functions.js**
 To clean things up I played with writing reusable functions and export/import and moved quite a bit of functions over from form.js to functions.js to have them imported instead.
@@ -63,7 +64,7 @@ To clean things up I played with writing reusable functions and export/import an
 # Conclusion
 
 This was fun. I learned far more from working with the CA than I did trying to work through the modules. Face a problem and work it through.
-All code and functions are my own apart from the obvious ones.
+All code and functions are my own apart from the obvious ones like the loader, the regEx and bits and pieces from the modules.
 
 # refrences and sources
 

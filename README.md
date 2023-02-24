@@ -73,3 +73,5 @@ https://digitalfortress.tech/tips/top-15-commonly-used-regex/
 https://api.punkapi.com/v2/beers
 https://developer.mozilla.org/en-US/
 https://stackoverflow.com/
+
+Deployed on Netlify: Deployed on Netlify: https://soft-basbousa-03b99f.netlify.app/

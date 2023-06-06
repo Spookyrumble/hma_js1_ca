@@ -29,11 +29,12 @@ I would appreciate if you would open a pull request so the code can be reviewed 
 
 ## Contact
 
-If you want to reach out to me please feel free to send me a message on either Twitter or LinkedIn.
+If you want to get in contact with me you can use either of the following:
+* Email: mailspooky@yahoo.com
+* [Twitter](https://twitter.com/HansMarAnd)
+* [LinkedIn](https://www.linkedin.com/in/hma1982/)
 
-[Twitter](https://twitter.com/HansMarAnd)
-
-[LinkedIn](https://www.linkedin.com/in/hma1982/)
+Or visit my portfolio linked on my [Github profile page](https://github.com/HMAsp) and use the contact form!
 
 # refrences and sources
 
